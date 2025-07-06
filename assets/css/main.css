@@ -7,6 +7,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+  --gris: #494848;
+  --blanco: #f9f8f6;
+  --lila: #9b86b3;
+  --lila-claro: #C8BFFF;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -74,6 +81,64 @@ input, select, textarea {
 
 /* Basic */
 
+:root {
+  --gris: #494848;
+  --blanco: #f9f8f6;
+  --lila: #9b86b3;
+  --lila-claro: #C8BFFF;
+}
+
+body {
+  background-color: var(--gris);
+  color: var(--blanco);
+  font-family: 'Inter', sans-serif; /* o la que estés usando */
+  line-height: 1.6;
+}
+
+a {
+  color: var(--lila);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--lila-claro);
+}
+
+/* Botones principales */
+.button, .primary {
+  background-color: var(--lila);
+  color: var(--blanco);
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover, .primary:hover {
+  background-color: var(--lila-claro);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blanco);
+}
+
+/* Formularios */
+input, textarea {
+  background-color: var(--gris);
+  color: var(--blanco);
+  border: 1px solid var(--lila);
+  padding: 0.5em;
+  border-radius: 6px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--lila-claro);
+}
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -99,7 +164,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #494848;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
