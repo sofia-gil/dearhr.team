@@ -240,7 +240,7 @@ input::placeholder, textarea::placeholder {
 	}
 
 		h1 a {
-			color: inherit;
+			color: #9b86b3;
 		}
 
 		@media screen and (max-width: 736px) {
